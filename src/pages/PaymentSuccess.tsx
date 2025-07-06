@@ -1,6 +1,6 @@
 import { useSearchParams, useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
-import { API_CONFIG } from '../config/api';
+import { API_CONFIG, apiCall } from '../config/api';
 
 export default function PaymentSuccess() {
   const [searchParams] = useSearchParams();
@@ -14,12 +14,10 @@ export default function PaymentSuccess() {
   useEffect(() => {
     console.log('orderId:', orderId, 'userId:', userId, 'planType:', planType);
     if (orderId && userId && planType) {
-      fetch(`${API_CONFIG.BASE_URL}${API_CONFIG.ENDPOINTS.VERIFY_PAYMENT}`, {
+      apiCall(API_CONFIG.ENDPOINTS.VERIFY_PAYMENT, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ orderId, userId, planType })
       })
-        .then(res => res.json())
         .then(data => {
           console.log('Verify response:', data);
         })

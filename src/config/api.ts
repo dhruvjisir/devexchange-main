@@ -2,7 +2,7 @@
 const getBackendUrl = () => {
   // In production, use the environment variable
   if (import.meta.env.PROD) {
-    return import.meta.env.VITE_BACKEND_URL || 'https://your-backend-url.onrender.com';
+    return import.meta.env.VITE_BACKEND_URL || 'https://devexchange-main.onrender.com';
   }
   
   // In development, use localhost
@@ -21,7 +21,13 @@ export const API_CONFIG = {
 
 // Helper function to make API calls
 export const apiCall = async (endpoint: string, options: RequestInit = {}) => {
-  const url = `${API_CONFIG.BASE_URL}${endpoint}`;
+  // Ensure no double slashes by properly joining URL parts
+  const baseUrl = API_CONFIG.BASE_URL.endsWith('/') 
+    ? API_CONFIG.BASE_URL.slice(0, -1) 
+    : API_CONFIG.BASE_URL;
+  const url = `${baseUrl}${endpoint}`;
+  
+  console.log('Making API call to:', url);
   
   const response = await fetch(url, {
     ...options,

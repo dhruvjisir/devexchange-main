@@ -17,7 +17,7 @@ import { checkSubscriptionFallback } from '@/lib/supabase-fallback'
 import { testEdgeFunction } from '@/lib/test-edge-function'
 import { toast } from 'sonner'
 import { load as loadCashfree } from '@cashfreepayments/cashfree-js';
-import { API_CONFIG } from '../config/api';
+import { API_CONFIG, apiCall } from '../config/api';
 
 // Base prices in INR
 const BASIC_PRICE_INR = 38000;
@@ -353,9 +353,8 @@ export default function Pricing() {
     setPaying(plan.type);
     try {
       // 1. Create order on backend
-      const res = await fetch(`${API_CONFIG.BASE_URL}${API_CONFIG.ENDPOINTS.CREATE_ORDER}`, {
+      const data = await apiCall(API_CONFIG.ENDPOINTS.CREATE_ORDER, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           orderAmount: plan.price,
           orderCurrency: 'INR',
@@ -367,7 +366,7 @@ export default function Pricing() {
           },
         }),
       });
-      const data = await res.json();
+      
       if (!data.payment_session_id) {
         toast(data.error || 'Failed to create payment session.');
         setPaying(null);
@@ -381,16 +380,15 @@ export default function Pricing() {
         redirectTarget: '_modal',
       });
       // 4. Verify payment
-      const verifyRes = await fetch(`${API_CONFIG.BASE_URL}${API_CONFIG.ENDPOINTS.VERIFY_PAYMENT}`, {
+      const verifyData = await apiCall(API_CONFIG.ENDPOINTS.VERIFY_PAYMENT, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ 
           orderId: data.order_id,
           userId: user.id,
           planType: plan.type
         }),
       });
-      const verifyData = await verifyRes.json();
+      
       if (verifyData && Array.isArray(verifyData.payments) && verifyData.payments.some((p: any) => p.payment_status === 'SUCCESS')) {
         toast(getSuccessMessage(plan.type));
         checkActiveSubscription();
