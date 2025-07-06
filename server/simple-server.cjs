@@ -46,8 +46,8 @@ console.log("Setting up middleware...");
 const allowedOrigins = [
   'http://localhost:5173', 
   'http://localhost:3000', 
-  'https://dhruv4.netlify.app',
-  'https://devexchange-main.onrender.com',
+  'https://startupbazzar.com',
+  'https://www.startupbazzar.com',
   'https://*.netlify.app'  // Allow all Netlify subdomains
 ];
 
@@ -140,7 +140,7 @@ app.post('/api/payment/create-order', async (req, res) => {
         customer_email: 'webcodder@example.com',
       },
       order_meta: {
-        return_url: 'https://dhruv4.netlify.app/payment-success?order_id={order_id}'
+        return_url: 'https://startupbazzar.com/payment-success?order_id={order_id}'
       }
     };
     

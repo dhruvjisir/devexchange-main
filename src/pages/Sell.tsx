@@ -490,9 +490,9 @@ const Sell = () => {
   return (
     <>
       <Helmet>
-        <title>Sell Your Startup or Business | capaitalexchange</title>
+        <title>Sell Your Startup or Business | StartupBazzar</title>
         <meta name="description" content="List your startup, SaaS, or online business for sale. Reach verified buyers and sell your business fast." />
-        <link rel="canonical" href="https://www.capaitalexchange.com/sell" />
+        <link rel="canonical" href="https://www.startupbazzar.com/sell" />
       </Helmet>
     <div className="min-h-screen flex flex-col w-full px-4">
       <main className="flex-grow w-full container py-8 px-0">

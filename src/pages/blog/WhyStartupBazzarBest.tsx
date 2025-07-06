@@ -10,34 +10,40 @@ export default function WhyCapaitalexchangeBest() {
         <meta property="og:title" content="Why capaitalexchange is the Best Place to Buy or Sell Your Business | capaitalexchange Blog" />
         <meta property="og:description" content="Discover why capaitalexchange is the top marketplace for buying and selling startups, SaaS, and online businesses. Learn about our unique features and benefits." />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://www.capaitalexchange.com/blog/why-capaitalexchange-best" />
-        <meta property="og:image" content="https://www.capaitalexchange.com/images/og-image.jpg" />
+        <meta property="og:url" content="https://www.startupbazzar.com/blog/why-startupbazzar-best" />
+        <meta property="og:image" content="https://www.startupbazzar.com/images/og-image.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Why capaitalexchange is the Best Place to Buy or Sell Your Business | capaitalexchange Blog" />
-        <meta name="twitter:description" content="Discover why capaitalexchange is the top marketplace for buying and selling startups, SaaS, and online businesses. Learn about our unique features and benefits." />
-        <meta name="twitter:image" content="https://www.capaitalexchange.com/images/twitter-card.jpg" />
-        <script type="application/ld+json">{`
-          {
+        <meta name="twitter:title" content="Why StartupBazzar is the Best Platform to Buy and Sell Startups" />
+        <meta name="twitter:description" content="Discover why StartupBazzar stands out as the premier marketplace for buying and selling startups, SaaS businesses, and online companies." />
+        <meta name="twitter:image" content="https://www.startupbazzar.com/images/twitter-card.jpg" />
+        <script type="application/ld+json">
+          {JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "Article",
-            "headline": "Why capaitalexchange is the Best Place to Buy or Sell Your Business",
+            "@type": "BlogPosting",
+            "headline": "Why StartupBazzar is the Best Platform to Buy and Sell Startups",
+            "description": "Discover why StartupBazzar stands out as the premier marketplace for buying and selling startups, SaaS businesses, and online companies.",
             "author": {
               "@type": "Organization",
-              "name": "capaitalexchange"
+              "name": "StartupBazzar"
             },
-            "datePublished": "2025-01-01",
-            "image": "https://www.capaitalexchange.com/images/og-image.jpg",
             "publisher": {
               "@type": "Organization",
-              "name": "capaitalexchange",
+              "name": "StartupBazzar",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://www.capaitalexchange.com/images/logo.png"
+                "url": "https://www.startupbazzar.com/images/logo.png"
               }
             },
-            "description": "Discover why capaitalexchange is the top marketplace for buying and selling startups, SaaS, and online businesses. Learn about our unique features and benefits."
-          }
-        `}</script>
+            "image": "https://www.startupbazzar.com/images/og-image.jpg",
+            "datePublished": "2024-01-15",
+            "dateModified": "2024-01-15",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://www.startupbazzar.com/blog/why-startupbazzar-best"
+            },
+            "url": "https://www.startupbazzar.com/images/logo.png"
+          })}
+        </script>
       </Helmet>
       <div className="container mx-auto px-4 py-8 max-w-3xl">
         <h1 className="text-3xl sm:text-4xl font-bold mb-6 text-center">Why capaitalexchange is the Best Place to Buy or Sell Your Business</h1>

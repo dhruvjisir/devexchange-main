@@ -6,19 +6,19 @@ const Terms = () => {
   return (
     <>
       <Helmet>
-        <title>Terms & Conditions | capaitalexchange</title>
-        <meta name="description" content="Read the terms and conditions for using capaitalexchange." />
-        <link rel="canonical" href="https://www.capaitalexchange.com/terms" />
-        <meta name="keywords" content="terms, conditions, capaitalexchange, startup marketplace, buy startups, sell startups" />
-        <meta property="og:title" content="Terms & Conditions | capaitalexchange" />
-        <meta property="og:description" content="Read the terms and conditions for using capaitalexchange, the leading marketplace for buying and selling startups and online businesses." />
+        <title>Terms & Conditions | StartupBazzar</title>
+        <meta name="description" content="Read the terms and conditions for using StartupBazzar." />
+        <link rel="canonical" href="https://www.startupbazzar.com/terms" />
+        <meta name="keywords" content="terms of service, startupbazzar terms, legal, startup marketplace" />
+        <meta property="og:title" content="Terms of Service | StartupBazzar" />
+        <meta property="og:description" content="Read StartupBazzar's terms of service and user agreement for our startup marketplace platform." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.capaitalexchange.com/terms" />
-        <meta property="og:image" content="https://www.capaitalexchange.com/images/og-image.jpg" />
+        <meta property="og:url" content="https://www.startupbazzar.com/terms" />
+        <meta property="og:image" content="https://www.startupbazzar.com/images/og-image.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Terms & Conditions | capaitalexchange" />
-        <meta name="twitter:description" content="Read the terms and conditions for using capaitalexchange, the leading marketplace for buying and selling startups and online businesses." />
-        <meta name="twitter:image" content="https://www.capaitalexchange.com/images/twitter-card.jpg" />
+        <meta name="twitter:title" content="Terms of Service | StartupBazzar" />
+        <meta name="twitter:description" content="Read StartupBazzar's terms of service and user agreement for our startup marketplace platform." />
+        <meta name="twitter:image" content="https://www.startupbazzar.com/images/twitter-card.jpg" />
       </Helmet>
     <div className="min-h-screen bg-background py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
@@ -103,7 +103,7 @@ const Terms = () => {
           <section>
             <h2 className="text-2xl font-semibold mb-4">5. Transactions</h2>
             <div className="space-y-4">
-              <p className="text-muted-foreground">capaitalexchange facilitates Transactions but is not a party to them. Contracts for the sale of goods or services are between Buyers and Sellers.</p>
+              <p className="text-muted-foreground">StartupBazzar facilitates Transactions but is not a party to them. Contracts for the sale of goods or services are between Buyers and Sellers.</p>
               <ul className="list-disc list-inside text-muted-foreground space-y-2 ml-4">
                 <li>Fees: We may charge fees for listing, transactions, or premium services.</li>
                 <li>Payments: Payments are processed through third-party payment providers.</li>
@@ -115,10 +115,10 @@ const Terms = () => {
           <section>
             <h2 className="text-2xl font-semibold mb-4">6. Content and Intellectual Property</h2>
             <div className="space-y-4">
-              <p className="text-muted-foreground">Users grant capaitalexchange a non-exclusive, worldwide, royalty-free license to use, display, and distribute Content posted on the Marketplace for operational purposes.</p>
+              <p className="text-muted-foreground">Users grant StartupBazzar a non-exclusive, worldwide, royalty-free license to use, display, and distribute Content posted on the Marketplace for operational purposes.</p>
               <ul className="list-disc list-inside text-muted-foreground space-y-2 ml-4">
                 <li>Content must not be defamatory, obscene, or infringing on third-party rights.</li>
-                <li>All intellectual property related to the Marketplace is owned by or licensed to capaitalexchange.</li>
+                <li>All intellectual property related to the Marketplace is owned by or licensed to StartupBazzar.</li>
               </ul>
             </div>
           </section>
@@ -135,12 +135,12 @@ const Terms = () => {
 
           <section>
             <h2 className="text-2xl font-semibold mb-4">9. Limitation of Liability</h2>
-            <p className="text-muted-foreground">capaitalexchange is not liable for any direct, indirect, incidental, or consequential damages arising from the use of the Marketplace. The Marketplace is provided "as is" without warranties of any kind.</p>
+            <p className="text-muted-foreground">StartupBazzar is not liable for any direct, indirect, incidental, or consequential damages arising from the use of the Marketplace. The Marketplace is provided "as is" without warranties of any kind.</p>
           </section>
 
           <section>
             <h2 className="text-2xl font-semibold mb-4">10. Indemnification</h2>
-            <p className="text-muted-foreground">You agree to indemnify and hold capaitalexchange, its affiliates, and employees harmless from any claims, losses, or damages arising from your use of the Marketplace or violation of these Terms.</p>
+            <p className="text-muted-foreground">You agree to indemnify and hold StartupBazzar, its affiliates, and employees harmless from any claims, losses, or damages arising from your use of the Marketplace or violation of these Terms.</p>
           </section>
 
           <section>
@@ -159,9 +159,9 @@ const Terms = () => {
           <section>
             <h2 className="text-2xl font-semibold mb-4">13. Miscellaneous</h2>
             <ul className="list-disc list-inside text-muted-foreground space-y-2 ml-4">
-              <li>Force Majeure: capaitalexchange is not liable for delays or failures due to events beyond our control.</li>
+              <li>Force Majeure: StartupBazzar is not liable for delays or failures due to events beyond our control.</li>
               <li>Severability: If any provision of these Terms is found invalid, the remaining provisions remain in effect.</li>
-              <li>Entire Agreement: These Terms constitute the entire agreement between you and capaitalexchange.</li>
+              <li>Entire Agreement: These Terms constitute the entire agreement between you and StartupBazzar.</li>
             </ul>
           </section>
 
@@ -169,14 +169,14 @@ const Terms = () => {
             <h2 className="text-2xl font-semibold mb-4">14. Contact Information</h2>
             <p className="text-muted-foreground">For questions or concerns, contact us at:</p>
             <ul className="list-none text-muted-foreground space-y-2 ml-4">
-              <li>Email: capaitalexchangehelp@gmail.com</li>
+              <li>Email: startupbazzarhelp@gmail.com</li>
             </ul>
           </section>
 
           <Card className="mt-8">
             <CardContent className="pt-6">
               <p className="text-muted-foreground">
-                By using capaitalexchange, you acknowledge that you have read, understood, and agree to these Terms and Conditions.
+                By using StartupBazzar, you acknowledge that you have read, understood, and agree to these Terms and Conditions.
               </p>
             </CardContent>
           </Card>

@@ -172,17 +172,17 @@ const Explore = () => {
       <Helmet>
         <title>Explore Startups for Sale | capaitalexchange</title>
         <meta name="description" content="Browse the best startups, SaaS, and online businesses for sale. Find your next acquisition." />
-        <link rel="canonical" href="https://www.capaitalexchange.com/explore" />
-        <meta name="keywords" content="explore startups, buy a startup, startup marketplace, SaaS for sale, business acquisition, capaitalexchange" />
-        <meta property="og:title" content="Explore Startups for Sale | Startup Marketplace | capaitalexchange" />
-        <meta property="og:description" content="Browse and discover the best startups, SaaS, and online businesses for sale. Find your next acquisition on capaitalexchange." />
+        <link rel="canonical" href="https://www.startupbazzar.com/explore" />
+        <meta name="keywords" content="buy startup, acquire business, SaaS marketplace, startup marketplace, startupbazzar" />
+        <meta property="og:title" content="Explore Startups & Businesses for Sale | StartupBazzar" />
+        <meta property="og:description" content="Discover and buy verified startups, SaaS businesses, and online companies. Browse our curated marketplace of investment opportunities." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.capaitalexchange.com/explore" />
-        <meta property="og:image" content="https://www.capaitalexchange.com/images/og-image.jpg" />
+        <meta property="og:url" content="https://www.startupbazzar.com/explore" />
+        <meta property="og:image" content="https://www.startupbazzar.com/images/og-image.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Explore Startups for Sale | Startup Marketplace | capaitalexchange" />
-        <meta name="twitter:description" content="Browse and discover the best startups, SaaS, and online businesses for sale. Find your next acquisition on capaitalexchange." />
-        <meta name="twitter:image" content="https://www.capaitalexchange.com/images/twitter-card.jpg" />
+        <meta name="twitter:title" content="Explore Startups & Businesses for Sale | StartupBazzar" />
+        <meta name="twitter:description" content="Discover and buy verified startups, SaaS businesses, and online companies. Browse our curated marketplace of investment opportunities." />
+        <meta name="twitter:image" content="https://www.startupbazzar.com/images/twitter-card.jpg" />
       </Helmet>
     <div className="container mx-auto px-4 py-8">
       <div className="mb-8">

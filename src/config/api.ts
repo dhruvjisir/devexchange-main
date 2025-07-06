@@ -2,7 +2,7 @@
 const getBackendUrl = () => {
   // In production, use the environment variable
   if (import.meta.env.PROD) {
-    return import.meta.env.VITE_BACKEND_URL || 'https://devexchange-main.onrender.com';
+    return import.meta.env.VITE_BACKEND_URL || 'https://api.startupbazzar.com';
   }
   
   // In development, use localhost

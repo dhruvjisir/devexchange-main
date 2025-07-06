@@ -6,24 +6,24 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Contact Us | capaitalexchange</title>
-        <meta name="description" content="Contact capaitalexchange for support, partnership, or general inquiries." />
-        <link rel="canonical" href="https://www.capaitalexchange.com/contact" />
-        <meta name="keywords" content="contact capaitalexchange, support, business inquiry, startup marketplace, buy startups, sell startups" />
-        <meta property="og:title" content="Contact Us | capaitalexchange Support & Inquiries" />
-        <meta property="og:description" content="Get in touch with the capaitalexchange team for support, partnership, or general inquiries. We're here to help you buy or sell your business." />
+        <title>Contact Us | StartupBazzar</title>
+        <meta name="description" content="Contact StartupBazzar for support, partnership, or general inquiries." />
+        <link rel="canonical" href="https://www.startupbazzar.com/contact" />
+        <meta name="keywords" content="contact startupbazzar, support, help, startup marketplace" />
+        <meta property="og:title" content="Contact Us | StartupBazzar" />
+        <meta property="og:description" content="Get in touch with the StartupBazzar team. We're here to help with buying, selling, or any questions about our startup marketplace." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.capaitalexchange.com/contact" />
-        <meta property="og:image" content="https://www.capaitalexchange.com/images/og-image.jpg" />
+        <meta property="og:url" content="https://www.startupbazzar.com/contact" />
+        <meta property="og:image" content="https://www.startupbazzar.com/images/og-image.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Contact Us | capaitalexchange Support & Inquiries" />
-        <meta name="twitter:description" content="Get in touch with the capaitalexchange team for support, partnership, or general inquiries. We're here to help you buy or sell your business." />
-        <meta name="twitter:image" content="https://www.capaitalexchange.com/images/twitter-card.jpg" />
+        <meta name="twitter:title" content="Contact Us | StartupBazzar" />
+        <meta name="twitter:description" content="Get in touch with the StartupBazzar team. We're here to help with buying, selling, or any questions about our startup marketplace." />
+        <meta name="twitter:image" content="https://www.startupbazzar.com/images/twitter-card.jpg" />
       </Helmet>
     <div className="container mx-auto px-4 py-12">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
-            <h1 className="text-3xl sm:text-4xl font-bold mb-8 text-center">Contact capaitalexchange</h1>
+            <h1 className="text-3xl sm:text-4xl font-bold mb-8 text-center">Contact StartupBazzar</h1>
           <p className="text-muted-foreground text-lg">
             Have questions? We're here to help!
           </p>

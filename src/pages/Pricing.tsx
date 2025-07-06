@@ -426,19 +426,19 @@ export default function Pricing() {
   return (
     <>
       <Helmet>
-        <title>Subscription Pricing | capaitalexchange</title>
+        <title>Subscription Pricing | StartupBazzar</title>
         <meta name="description" content="Transparent pricing for buying and selling startups and businesses. Choose the best plan for your needs." />
-        <link rel="canonical" href="https://www.capaitalexchange.com/pricing" />
-        <meta name="keywords" content="pricing, subscription, buy startup, sell startup, SaaS pricing, capaitalexchange" />
-        <meta property="og:title" content="Subscription Pricing | Buy & Sell Startups | capaitalexchange" />
+        <link rel="canonical" href="https://www.startupbazzar.com/pricing" />
+        <meta name="keywords" content="pricing, subscription, buy startup, sell startup, SaaS pricing, startupbazzar" />
+        <meta property="og:title" content="Subscription Pricing | Buy & Sell Startups | StartupBazzar" />
         <meta property="og:description" content="See our transparent pricing for buying and selling startups, SaaS, and online businesses. Choose the best plan for your needs." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.capaitalexchange.com/pricing" />
-        <meta property="og:image" content="https://www.capaitalexchange.com/images/og-image.jpg" />
+        <meta property="og:url" content="https://www.startupbazzar.com/pricing" />
+        <meta property="og:image" content="https://www.startupbazzar.com/images/og-image.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Subscription Pricing | Buy & Sell Startups | capaitalexchange" />
+        <meta name="twitter:title" content="Subscription Pricing | Buy & Sell Startups | StartupBazzar" />
         <meta name="twitter:description" content="See our transparent pricing for buying and selling startups, SaaS, and online businesses. Choose the best plan for your needs." />
-        <meta name="twitter:image" content="https://www.capaitalexchange.com/images/twitter-card.jpg" />
+        <meta name="twitter:image" content="https://www.startupbazzar.com/images/twitter-card.jpg" />
       </Helmet>
     <div className="container mx-auto px-4 py-8 w-full">
         <h1 className="text-3xl sm:text-4xl font-bold mb-8 text-center">Subscription Plans & Pricing</h1>
