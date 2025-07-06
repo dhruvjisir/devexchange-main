@@ -2,8 +2,8 @@
 
 ## Overview
 This project uses a split deployment approach:
-- **Frontend**: Netlify (static files)
-- **Backend**: Render/Railway (Express server)
+- **Frontend**: Netlify (static files) - `https://startupbazzar.com`
+- **Backend**: Render/Railway (Express server) - `https://api.startupbazzar.com`
 
 ## Step 1: Deploy Backend (Express Server)
 
@@ -13,7 +13,7 @@ This project uses a split deployment approach:
 2. **Create a new Web Service**
 3. **Connect your GitHub repository**
 4. **Configure the service:**
-   - **Name**: `devexchange-backend`
+   - **Name**: `startupbazzar-backend`
    - **Root Directory**: `server`
    - **Build Command**: `npm install`
    - **Start Command**: `npm start`
@@ -55,7 +55,7 @@ This project uses a split deployment approach:
    ```
    VITE_SUPABASE_URL=your_supabase_url
    VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
-   VITE_BACKEND_URL=https://your-backend-url.onrender.com
+   VITE_BACKEND_URL=https://api.startupbazzar.com
    ```
 
 6. **Deploy**
@@ -76,7 +76,7 @@ After deploying the backend, update your frontend to use the new backend URL:
 
 ## Step 4: Test Your Deployment
 
-1. **Test the backend health endpoint**: `https://your-backend-url.onrender.com/api/health`
+1. **Test the backend health endpoint**: `https://api.startupbazzar.com/api/health`
 2. **Test the frontend**: Visit your Netlify URL
 3. **Test payment flow**: Make sure payments work end-to-end
 
@@ -95,7 +95,7 @@ CASHFREE_ENV=PRODUCTION
 ```
 VITE_SUPABASE_URL=your_supabase_url
 VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
-VITE_BACKEND_URL=https://your-backend-url.onrender.com
+VITE_BACKEND_URL=https://api.startupbazzar.com
 ```
 
 ## Troubleshooting
@@ -115,8 +115,8 @@ app.use(cors({
   origin: [
     'http://localhost:5173', 
     'http://localhost:3000', 
-    'https://your-netlify-domain.netlify.app',
-    'https://your-custom-domain.com'
+    'https://startupbazzar.com',
+    'https://www.startupbazzar.com'
   ],
   credentials: true
 }));
@@ -124,6 +124,6 @@ app.use(cors({
 
 ## URLs After Deployment
 
-- **Frontend**: `https://your-site.netlify.app`
-- **Backend**: `https://your-backend.onrender.com`
-- **Health Check**: `https://your-backend.onrender.com/api/health` 
+- **Frontend**: `https://startupbazzar.com`
+- **Backend**: `https://api.startupbazzar.com`
+- **Health Check**: `https://api.startupbazzar.com/api/health` 

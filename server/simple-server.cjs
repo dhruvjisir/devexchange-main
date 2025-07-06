@@ -46,8 +46,10 @@ console.log("Setting up middleware...");
 const allowedOrigins = [
   'http://localhost:5173', 
   'http://localhost:3000', 
+  'https://dhruv4.netlify.app',
   'https://startupbazzar.com',
   'https://www.startupbazzar.com',
+  'https://devexchange-main.onrender.com',
   'https://*.netlify.app'  // Allow all Netlify subdomains
 ];
 
