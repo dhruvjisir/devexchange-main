@@ -373,7 +373,7 @@ export default function Pricing() {
         return;
       }
       // 2. Load Cashfree SDK
-      const cashfree = await loadCashfree({ mode: 'sandbox' });
+      const cashfree = await loadCashfree({ mode: 'production' });
       // 3. Launch checkout
       await cashfree.checkout({
         paymentSessionId: data.payment_session_id,
