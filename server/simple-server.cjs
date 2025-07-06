@@ -14,7 +14,12 @@ const PORT = process.env.PORT || 4000;
 
 // Middleware
 app.use(cors({
-  origin: ['http://localhost:5173', 'http://localhost:3000', 'https://yourdomain.com'],
+  origin: [
+    'http://localhost:5173', 
+    'http://localhost:3000', 
+    'https://dhruv4.netlify.app',
+    'https://devexchange-main.onrender.com'
+  ],
   credentials: true
 }));
 app.use(express.json());
@@ -74,7 +79,7 @@ app.post('/api/payment/create-order', async (req, res) => {
         customer_email: 'webcodder@example.com',
       },
       order_meta: {
-        return_url: 'https://startupbazzar.com/payment-success?order_id={order_id}'
+        return_url: 'https://dhruv4.netlify.app/payment-success?order_id={order_id}'
       }
     };
     const response = await cashfree.PGCreateOrder(request);
