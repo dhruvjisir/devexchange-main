@@ -20,10 +20,10 @@ import { load as loadCashfree } from '@cashfreepayments/cashfree-js';
 import { API_CONFIG, apiCall } from '../config/api';
 
 // Base prices in INR
-const BASIC_PRICE_INR = 38000;
-const PREMIUM_PRICE_INR = 82000;
-const BUYER_BASIC_PRICE_INR = 8200;
-const BUYER_PREMIUM_PRICE_INR = 49000;
+const BASIC_PRICE_INR = 2500;
+const PREMIUM_PRICE_INR = 6500;
+const BUYER_BASIC_PRICE_INR = 900;
+const BUYER_PREMIUM_PRICE_INR = 2100;
 
 // Only INR supported
 const CURRENCIES = {
@@ -96,7 +96,7 @@ const plans: Plan[] = [
     type: 'basic',
     name: 'Seller Plan 1',
     description: 'List projects up to $100,000',
-    price: 38000,
+    price: 2500,
     features: [
       'List projects up to $100,000',
     ]
@@ -105,7 +105,7 @@ const plans: Plan[] = [
     type: 'premium',
     name: 'Seller Plan 2',
     description: 'List projects up to $250,000',
-    price: 82000,
+    price: 6500,
     features: [
       'List projects up to $250,000',
     ]
@@ -127,7 +127,7 @@ const plans: Plan[] = [
 const buyerPlans: Plan[] = [
   {
     name: 'Buyer Plan 1',
-    price: 8200,
+    price: 900,
     description: 'View contact details for projects under $100,000',
     features: [
       'View contact details for projects under $100,000',
@@ -136,7 +136,7 @@ const buyerPlans: Plan[] = [
   },
   {
     name: 'Buyer Plan 2',
-    price: 49000,
+    price: 2100,
     description: 'View contact details for all projects (no price limit)',
     features: [
       'View contact details for all projects',
@@ -443,17 +443,6 @@ export default function Pricing() {
     <div className="container mx-auto px-4 py-8 w-full">
         <h1 className="text-3xl sm:text-4xl font-bold mb-8 text-center">Subscription Plans & Pricing</h1>
         <blockquote className="text-xl font-semibold text-center text-primary mb-8">BUSINESS MAN RULE NO. XX = NEVER HESITATE IN INVESTING</blockquote>
-        
-        {/* Debug button for testing Edge Function */}
-        <div className="mb-8 text-center">
-          <Button 
-            variant="outline" 
-            onClick={handleTestEdgeFunction}
-            className="mb-4"
-          >
-            Test Edge Function
-          </Button>
-        </div>
       
       <h2 className="text-2xl font-semibold mb-4 mt-8">Seller Plans</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12 w-full">
