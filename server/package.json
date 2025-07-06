@@ -1,0 +1,23 @@
+{
+  "name": "devexchange-backend",
+  "version": "1.0.0",
+  "description": "Express backend for DevExchange",
+  "main": "simple-server.cjs",
+  "scripts": {
+    "start": "node simple-server.cjs",
+    "dev": "nodemon simple-server.cjs"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "@supabase/supabase-js": "^2.39.0",
+    "dotenv": "^16.3.1",
+    "cashfree-pg": "^1.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+} 

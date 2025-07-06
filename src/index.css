@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 222.2 84% 4.9%;
+    --sidebar-primary: 221.2 83.2% 53.3%;
+    --sidebar-primary-foreground: 210 40% 98%;
+    --sidebar-accent: 221.2 83.2% 53.3%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 214.3 31.8% 91.4%;
+    --sidebar-ring: 221.2 83.2% 53.3%;
+    
+    --color-1: 221.2 83.2% 53.3%;
+    --color-2: 215.4 16.3% 46.9%;
+    --color-3: 214.3 31.8% 91.4%;
+    --color-4: 210 40% 96.1%;
+    --color-5: 0 0% 100%;
+    --gradient-bg: linear-gradient(to bottom, #ffffff 0%, #f8fafc 50%, #f1f5f9 100%, #ffffff 100%);
+  }
+
+  body {
+    background: var(--gradient-bg);
+    color: hsl(var(--foreground));
+    @apply antialiased;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+
+    --sidebar-background: 222.2 84% 4.9%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 221.2 83.2% 53.3%;
+    --sidebar-primary-foreground: 210 40% 98%;
+    --sidebar-accent: 221.2 83.2% 53.3%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 217.2 32.6% 17.5%;
+    --sidebar-ring: 221.2 83.2% 53.3%;
+    
+    --color-1: 221.2 83.2% 53.3%;
+    --color-2: 215 20.2% 65.1%;
+    --color-3: 217.2 32.6% 17.5%;
+    --color-4: 222.2 84% 4.9%;
+    --color-5: 0 0% 0%;
+    --gradient-bg: linear-gradient(to bottom, #0f172a 0%, #1e293b 50%, #0f172a 100%, #0f172a 100%);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+  
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:border-primary/50 dark:hover:border-primary/50;
+  }
+  
+  .tag {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-primary/5 text-primary hover:bg-primary/10 dark:bg-primary/5 dark:text-primary dark:hover:bg-primary/10 transition-colors;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-primary-foreground shadow-lg hover:shadow-xl transition-all duration-300 hover:bg-primary/90;
+  }
+
+  .btn-secondary {
+    @apply border-input hover:border-primary hover:bg-accent transition-all duration-300;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary via-primary/80 to-primary bg-clip-text text-transparent;
+  }
+
+  .card {
+    @apply bg-card text-card-foreground border border-border rounded-xl shadow-sm hover:shadow-md transition-all duration-300;
+  }
+
+  .input {
+    @apply bg-background border-input focus:border-primary focus:ring-primary/20 rounded-lg transition-all duration-300;
+  }
+
+  .select {
+    @apply bg-background border-input focus:border-primary focus:ring-primary/20 rounded-lg transition-all duration-300;
+  }
+
+  .checkbox {
+    @apply border-input text-primary focus:ring-primary/20 rounded transition-all duration-300;
+  }
+
+  .radio {
+    @apply border-input text-primary focus:ring-primary/20 transition-all duration-300;
+  }
+
+  .glass-card {
+    @apply bg-background/80 dark:bg-background/40 backdrop-blur-lg border border-border rounded-xl shadow-lg;
+  }
+
+  .btn-rgb {
+    @apply relative overflow-hidden bg-gradient-to-r from-primary via-primary/80 to-primary text-primary-foreground shadow-lg hover:shadow-xl transition-all duration-300;
+    background-size: 200% 200%;
+    animation: rgb-gradient 3s ease infinite;
+  }
+
+  .btn-rgb::before {
+    content: '';
+    @apply absolute inset-0 bg-white/20 opacity-0 transition-opacity duration-300;
+  }
+
+  .btn-rgb:hover::before {
+    @apply opacity-100;
+  }
+
+  .btn-rgb::after {
+    content: '';
+    @apply absolute inset-0 bg-primary/20 opacity-0 transition-opacity duration-300;
+  }
+
+  .btn-rgb:hover::after {
+    @apply opacity-100;
+  }
+
+  .btn-rgb-border {
+    @apply relative overflow-hidden border-2 border-transparent bg-gradient-to-r from-primary via-primary/80 to-primary bg-clip-padding p-[1px] transition-all duration-300;
+    background-size: 200% 200%;
+    animation: rgb-gradient 3s ease infinite;
+  }
+
+  .btn-rgb-border > * {
+    @apply bg-background text-foreground hover:bg-transparent hover:text-primary-foreground transition-colors duration-300;
+  }
+
+  .btn-rgb-text {
+    @apply bg-gradient-to-r from-primary via-primary/80 to-primary bg-clip-text text-transparent animate-rgb-text;
+  }
+}
+
+@layer components {
+  .loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid var(--primary);
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes gradient-x {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  @keyframes rgb-gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  @keyframes rgb-text {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .animate-gradient-x {
+    animation: gradient-x 3s ease infinite;
+    background-size: 200% 200%;
+  }
+
+  .animate-rgb-text {
+    animation: rgb-text 3s ease infinite;
+    background-size: 200% 200%;
+  }
+}
+
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  text-align: left;
+}
+
+/* Animation Delays */
+.animation-delay-200 {
+  animation-delay: 200ms;
+}
+
+.animation-delay-300 {
+  animation-delay: 300ms;
+}
+
+.animation-delay-400 {
+  animation-delay: 400ms;
+}
+
+.animation-delay-500 {
+  animation-delay: 500ms;
+}
+
+.animation-delay-1000 {
+  animation-delay: 1000ms;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2000ms;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4000ms;
+}
