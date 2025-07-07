@@ -29,6 +29,19 @@ const Contact = () => {
           </p>
         </div>
 
+        {/* Contact Policy Section */}
+        <div className="mb-10 p-6 border rounded-lg bg-gray-50">
+          <h2 className="text-2xl font-semibold mb-2">Contact Us</h2>
+          <p className="text-sm text-gray-500 mb-4">Last updated on 07-07-2025 18:46:56</p>
+          <ul className="text-left text-base space-y-2">
+            <li><strong>Merchant Legal entity name:</strong> OM PRAKASH RAJORA</li>
+            <li><strong>Registered Address:</strong> Jail road, tonk, Rajasthan, PIN: 304001</li>
+            <li><strong>Operational Address:</strong> Jail road, tonk, Rajasthan, PIN: 304001</li>
+            <li><strong>Telephone No:</strong> 9460411413</li>
+            <li><strong>E-Mail ID:</strong></li>
+          </ul>
+        </div>
+
         <Card className="hover:shadow-lg transition-all duration-300 max-w-md mx-auto">
           <CardHeader>
             <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
@@ -38,12 +51,7 @@ const Contact = () => {
             <CardDescription>Get in touch via email</CardDescription>
           </CardHeader>
           <CardContent>
-            <a 
-              href="mailto:capaitalexchangehelp@gmail.com"
-              className="text-primary hover:underline text-lg"
-            >
-              capaitalexchangehelp@gmail.com
-            </a>
+            {/* Email removed as per request */}
           </CardContent>
         </Card>
       </div>

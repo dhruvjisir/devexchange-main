@@ -7,5 +7,5 @@ export const smtpConfig = {
     pass: import.meta.env.VITE_SMTP_PASSWORD,
   },
   defaultFrom: import.meta.env.VITE_SMTP_FROM_EMAIL || 'noreply@yourdomain.com',
-  defaultReplyTo: import.meta.env.VITE_SMTP_REPLY_TO || 'startupbazzarhelp@gmail.com',
+  defaultReplyTo: import.meta.env.VITE_SMTP_REPLY_TO || '',
 }; 
