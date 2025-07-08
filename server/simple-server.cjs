@@ -63,7 +63,16 @@ app.use(cors({
     // Allow requests with no origin (like mobile apps or curl requests)
     if (!origin) return callback(null, true);
     
-    if (allowedOrigins.indexOf(origin) !== -1) {
+    const isAllowed = allowedOrigins.some(allowedOrigin => {
+      if (allowedOrigin.startsWith('https://*.')) {
+        // Wildcard subdomain support
+        const base = allowedOrigin.replace('https://*.', '');
+        return origin.endsWith(base);
+      }
+      return origin === allowedOrigin;
+    });
+
+    if (isAllowed) {
       callback(null, true);
     } else {
       console.log('CORS blocked origin:', origin);
