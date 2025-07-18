@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
+import { SparklesText } from "@/components/ui/sparkles-text";
 
 const sectionVariants = {
   hidden: { opacity: 0, y: 40 },
@@ -25,6 +26,10 @@ const Dhruv = () => {
       {/* Animated Gradient Background */}
       <div className="fixed inset-0 -z-10 animate-gradient-move bg-gradient-to-br from-blue-500/40 via-purple-500/40 to-pink-500/40 blur-2xl opacity-60" />
       <div className="max-w-3xl mx-auto py-16 px-4 relative">
+        {/* Announcement with SparklesText */}
+        <div className="mb-10 flex justify-center">
+          <SparklesText text="We sold our 1st startup successfully for $27,000!" className="text-3xl sm:text-4xl md:text-5xl text-center" />
+        </div>
         {/* Animated Headline */}
         <motion.div
           initial={{ opacity: 0, y: -40 }}
