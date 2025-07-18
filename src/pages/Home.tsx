@@ -6,6 +6,7 @@ import { useAuth } from '@/contexts/AuthContext'
 import { useNavigate } from 'react-router-dom'
 import { Badge } from "@/components/ui/badge";
 import { memo } from 'react';
+import { SparklesText } from "@/components/ui/sparkles-text";
 
 // Memoize the ProjectCard component to prevent unnecessary re-renders
 const ProjectCard = memo(({ project }: { project: any }) => (
@@ -72,6 +73,10 @@ const Home = () => {
 
       {/* Main Content */}
       <div className="relative space-y-8 p-8">
+        {/* Announcement with SparklesText */}
+        <div className="mb-8 flex justify-center">
+          <SparklesText text="We sold our 1st startup successfully for $27,000!" className="text-2xl sm:text-3xl md:text-4xl text-center" />
+        </div>
         {/* Hero Section */}
         <section className="text-center space-y-4">
           <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
