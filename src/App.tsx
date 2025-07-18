@@ -43,6 +43,8 @@ import SitesLikeAcquire from '@/pages/blog/SitesLikeAcquire';
 import SellBusinessOnline from '@/pages/blog/SellBusinessOnline';
 import AcquireComAlternatives from '@/pages/blog/AcquireComAlternatives';
 import PaymentSuccess from "@/pages/PaymentSuccess";
+import Dhruv from "@/pages/Dhruv";
+import { getSubdomain } from "@/lib/getSubdomain";
 
 // Memoized Background Elements
 const BackgroundElements = memo(() => (
@@ -116,6 +118,13 @@ const queryClient = new QueryClient({
 });
 
 function App() {
+  const subdomain = getSubdomain(window.location.hostname);
+
+  if (subdomain === "dhruv") {
+    // Only render the portfolio page, skip the rest of the app
+    return <Dhruv />;
+  }
+
   return (
     <QueryClientProvider client={queryClient}>
       <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
@@ -155,6 +164,7 @@ function App() {
                       <Route path="/pricing" element={<Pricing />} />
                       <Route path="/terms" element={<Terms />} />
                       <Route path="/about" element={<About />} />
+                      <Route path="/dhruv" element={<Dhruv />} />
                       <Route path="/auth/callback" element={<AuthCallback />} />
                       <Route path="/debug" element={<Debug />} />
                       <Route path="/payment-success" element={<PaymentSuccess />} />
