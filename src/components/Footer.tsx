@@ -29,6 +29,7 @@ export const Footer = () => {
             <ul className="space-y-3">
               <li><Link to="/about" className="text-muted-foreground hover:text-primary transition-colors text-sm sm:text-base">About</Link></li>
               <li><Link to="/contact" className="text-muted-foreground hover:text-primary transition-colors text-sm sm:text-base">Contact</Link></li>
+              <li><a href="https://dhruv.startupbazzar.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors text-sm sm:text-base">Founder & CEO</a></li>
               <li><Link to="/terms" className="text-muted-foreground hover:text-primary transition-colors text-sm sm:text-base">Terms</Link></li>
             </ul>
           </div>

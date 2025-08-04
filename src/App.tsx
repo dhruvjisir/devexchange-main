@@ -45,6 +45,10 @@ import AcquireComAlternatives from '@/pages/blog/AcquireComAlternatives';
 import PaymentSuccess from "@/pages/PaymentSuccess";
 import Dhruv from "@/pages/Dhruv";
 import { getSubdomain } from "@/lib/getSubdomain";
+import AIInBusiness2025 from '@/pages/blog/AIInBusiness2025';
+import ProfitableBusinessIdeas2025 from '@/pages/blog/ProfitableBusinessIdeas2025';
+import SmallBusinessIdeas2025 from '@/pages/blog/SmallBusinessIdeas2025';
+import LittleBusinessIdeas2025 from '@/pages/blog/LittleBusinessIdeas2025';
 
 // Memoized Background Elements
 const BackgroundElements = memo(() => (
@@ -148,6 +152,10 @@ function App() {
                     <Route path="/blog/SitesLikeAcquire" element={<SitesLikeAcquire />} />
                     <Route path="/blog/SellBusinessOnline" element={<SellBusinessOnline />} />
                     <Route path="/blog/AcquireComAlternatives" element={<AcquireComAlternatives />} />
+                    <Route path="/blog/AIInBusiness2025" element={<AIInBusiness2025 />} />
+                    <Route path="/blog/ProfitableBusinessIdeas2025" element={<ProfitableBusinessIdeas2025 />} />
+                    <Route path="/blog/SmallBusinessIdeas2025" element={<SmallBusinessIdeas2025 />} />
+                    <Route path="/blog/LittleBusinessIdeas2025" element={<LittleBusinessIdeas2025 />} />
                     <Route element={<Layout />}>
                       <Route path="/" element={<Home />} />
                       <Route path="/explore" element={<ProtectedRoute><Explore /></ProtectedRoute>} />
