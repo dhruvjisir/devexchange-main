@@ -1,10 +1,10 @@
 import React from 'react';
-import Head from 'next/head';
+import { Helmet } from 'react-helmet-async';
 
 export default function HowToBuyBusinessBeginnersGuide() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
-      <Head>
+      <Helmet>
         <title>How to Buy a Business: A Beginner's Guide | StartupBazzar</title>
         <meta 
           name="description" 
@@ -14,7 +14,7 @@ export default function HowToBuyBusinessBeginnersGuide() {
           name="keywords" 
           content="biz buy, business for sale, buy business, how to buy a business, startupbazzar, business buying guide"
         />
-      </Head>
+      </Helmet>
 
       <article className="prose lg:prose-xl">
         <h1 className="text-4xl font-bold mb-6">How to Buy a Business: A Beginner's Guide</h1>

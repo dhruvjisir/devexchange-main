@@ -1,14 +1,14 @@
 import React from 'react';
-import Head from 'next/head';
+import { Helmet } from 'react-helmet-async';
 
 export default function HowToSellYourBusinessOnline2025() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
-      <Head>
+      <Helmet>
         <title>How to Sell Your Business Online in 2025 | StartupBazzar</title>
         <meta name="description" content="Learn how to sell your business online in 2025 with this step-by-step guide. Discover the best strategies, platforms, and tips for a successful biz sell experience." />
         <meta name="keywords" content="biz sell, business for sale, sell business online, startupbazzar, how to sell a business, online business sale" />
-      </Head>
+      </Helmet>
       <article className="prose lg:prose-xl">
         <h1 className="text-4xl font-bold mb-6">How to Sell Your Business Online in 2025</h1>
         <div className="text-gray-600 mb-8">
