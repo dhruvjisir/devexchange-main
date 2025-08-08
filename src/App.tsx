@@ -42,6 +42,10 @@ import HowToSellYourStartup from '@/pages/blog/HowToSellYourStartup';
 import SitesLikeAcquire from '@/pages/blog/SitesLikeAcquire';
 import SellBusinessOnline from '@/pages/blog/SellBusinessOnline';
 import AcquireComAlternatives from '@/pages/blog/AcquireComAlternatives';
+import HowToBuyBusinessBeginnersGuide from '@/pages/blog/HowToBuyBusinessBeginnersGuide';
+import HowToSellYourBusinessOnline2025 from '@/pages/blog/HowToSellYourBusinessOnline2025';
+import StartupBazzarBlogGuide from '@/pages/blog/StartupBazzarBlogGuide';
+import TopStartupMarketplaceQueries from '@/pages/blog/TopStartupMarketplaceQueries';
 import PaymentSuccess from "@/pages/PaymentSuccess";
 import Dhruv from "@/pages/Dhruv";
 import { getSubdomain } from "@/lib/getSubdomain";
@@ -152,6 +156,10 @@ function App() {
                     <Route path="/blog/SitesLikeAcquire" element={<SitesLikeAcquire />} />
                     <Route path="/blog/SellBusinessOnline" element={<SellBusinessOnline />} />
                     <Route path="/blog/AcquireComAlternatives" element={<AcquireComAlternatives />} />
+                    <Route path="/blog/HowToBuyBusinessBeginnersGuide" element={<HowToBuyBusinessBeginnersGuide />} />
+                    <Route path="/blog/HowToSellYourBusinessOnline2025" element={<HowToSellYourBusinessOnline2025 />} />
+                    <Route path="/blog/StartupBazzarBlogGuide" element={<StartupBazzarBlogGuide />} />
+                    <Route path="/blog/TopStartupMarketplaceQueries" element={<TopStartupMarketplaceQueries />} />
                     <Route path="/blog/AIInBusiness2025" element={<AIInBusiness2025 />} />
                     <Route path="/blog/ProfitableBusinessIdeas2025" element={<ProfitableBusinessIdeas2025 />} />
                     <Route path="/blog/SmallBusinessIdeas2025" element={<SmallBusinessIdeas2025 />} />

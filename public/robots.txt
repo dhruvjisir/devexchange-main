@@ -1,16 +1,56 @@
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: Twitterbot
-Allow: /
-
-User-agent: facebookexternalhit
-Allow: /
-
 User-agent: *
 Allow: /
 
+# Sitemaps
 Sitemap: https://www.startupbazzar.com/sitemap.xml
+Sitemap: https://blog.startupbazzar.com/blog-sitemap.xml
+Sitemap: https://blog.startupbazzar.com/rss.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Disallow
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /static/
+Disallow: /private/
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /dist/
+Disallow: /build/
+
+# Allow important directories
+Allow: /blog/
+Allow: /explore/
+Allow: /sell/
+Allow: /tools/
+Allow: /pricing/
+Allow: /about/
+Allow: /contact/
+
+# Google specific
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Bing specific
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Block bad bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
