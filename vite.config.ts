@@ -2,7 +2,6 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
 import { compression } from 'vite-plugin-compression2';
-import viteCompression from 'vite-plugin-compression';
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
@@ -47,19 +46,9 @@ export default defineConfig(({ mode }) => ({
   plugins: [
     react(),
     compression({
-      algorithms: ['gzip'],
+      algorithms: ['gzip', 'brotliCompress'],
       exclude: [/\.(br)$/, /\.(gz)$/],
       threshold: 1024
-    }),
-    compression({
-      algorithms: ['brotliCompress'],
-      exclude: [/\.(br)$/, /\.(gz)$/],
-      threshold: 1024
-    }),
-    viteCompression({
-      algorithm: 'brotliCompress',
-      ext: '.br',
-      threshold: 10240, // Only assets bigger than 10kb
     }),
   ],
   resolve: {

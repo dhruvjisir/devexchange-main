@@ -183,8 +183,8 @@ export default function BlogIndex() {
           {/* All Articles */}
           <div>
             <h2 className="text-2xl font-bold mb-8 text-center">All Articles</h2>
-            <div className="grid gap-8">
-              {blogPosts.map((post, index) => (
+        <div className="grid gap-8">
+          {blogPosts.map((post, index) => (
                 <article key={post.path} className="bg-white dark:bg-slate-800 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 p-6">
                   <div className="flex items-start justify-between mb-4">
                     <div className="flex items-center gap-3">
@@ -195,10 +195,10 @@ export default function BlogIndex() {
                       <span className="text-sm text-muted-foreground">•</span>
                       <span className="text-sm text-muted-foreground">{post.readTime}</span>
                     </div>
-                  </div>
-                  <Link to={post.path} className="block group">
+              </div>
+              <Link to={post.path} className="block group">
                     <h3 className="text-xl sm:text-2xl font-semibold text-primary hover:text-blue-700 transition-colors mb-3 group-hover:underline">
-                      {post.title}
+                  {post.title}
                     </h3>
                     <p className="text-muted-foreground leading-relaxed mb-4">
                       {post.description}
@@ -209,9 +209,9 @@ export default function BlogIndex() {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                       </svg>
                     </div>
-                  </Link>
-                </article>
-              ))}
+              </Link>
+            </article>
+          ))}
             </div>
           </div>
 
