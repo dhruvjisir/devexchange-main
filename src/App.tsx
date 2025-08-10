@@ -11,6 +11,7 @@ import NavBar from "@/components/NavBar";
 import { Footer } from "@/components/Footer";
 import Layout from "@/components/Layout";
 import { ScrollToTop } from "@/components/ScrollToTop";
+import BlogLayout from "@/components/BlogLayout";
 
 // Direct imports for maximum speed
 import Home from "@/pages/Home";
@@ -146,24 +147,28 @@ function App() {
                   <Routes>
                     <Route path="/login" element={<Login />} />
                     <Route path="/signup" element={<Signup />} />
-                    <Route path="/blog" element={<BlogIndex />} />
-                    <Route path="/blog/HowToAcquireStartup2025" element={<HowToAcquireStartup2025 />} />
-                    <Route path="/blog/Top10PlatformsToBuySellStartups" element={<Top10PlatformsToBuySellStartups />} />
-                    <Route path="/blog/WhyStartupBazzarBest" element={<WhyStartupBazzarBest />} />
-                    <Route path="/blog/HowToSellYourStartup2025" element={<HowToSellYourStartup2025 />} />
-                    <Route path="/blog/HowToSellBusinessOnAcquire" element={<HowToSellBusinessOnAcquire />} />
-                    <Route path="/blog/HowToSellYourStartup" element={<HowToSellYourStartup />} />
-                    <Route path="/blog/SitesLikeAcquire" element={<SitesLikeAcquire />} />
-                    <Route path="/blog/SellBusinessOnline" element={<SellBusinessOnline />} />
-                    <Route path="/blog/AcquireComAlternatives" element={<AcquireComAlternatives />} />
-                    <Route path="/blog/HowToBuyBusinessBeginnersGuide" element={<HowToBuyBusinessBeginnersGuide />} />
-                    <Route path="/blog/HowToSellYourBusinessOnline2025" element={<HowToSellYourBusinessOnline2025 />} />
-                    <Route path="/blog/StartupBazzarBlogGuide" element={<StartupBazzarBlogGuide />} />
-                    <Route path="/blog/TopStartupMarketplaceQueries" element={<TopStartupMarketplaceQueries />} />
-                    <Route path="/blog/AIInBusiness2025" element={<AIInBusiness2025 />} />
-                    <Route path="/blog/ProfitableBusinessIdeas2025" element={<ProfitableBusinessIdeas2025 />} />
-                    <Route path="/blog/SmallBusinessIdeas2025" element={<SmallBusinessIdeas2025 />} />
-                    <Route path="/blog/LittleBusinessIdeas2025" element={<LittleBusinessIdeas2025 />} />
+
+                    <Route element={<BlogLayout />}>
+                      <Route path="/blog" element={<BlogIndex />} />
+                      <Route path="/blog/HowToAcquireStartup2025" element={<HowToAcquireStartup2025 />} />
+                      <Route path="/blog/Top10PlatformsToBuySellStartups" element={<Top10PlatformsToBuySellStartups />} />
+                      <Route path="/blog/WhyStartupBazzarBest" element={<WhyStartupBazzarBest />} />
+                      <Route path="/blog/HowToSellYourStartup2025" element={<HowToSellYourStartup2025 />} />
+                      <Route path="/blog/HowToSellBusinessOnAcquire" element={<HowToSellBusinessOnAcquire />} />
+                      <Route path="/blog/HowToSellYourStartup" element={<HowToSellYourStartup />} />
+                      <Route path="/blog/SitesLikeAcquire" element={<SitesLikeAcquire />} />
+                      <Route path="/blog/SellBusinessOnline" element={<SellBusinessOnline />} />
+                      <Route path="/blog/AcquireComAlternatives" element={<AcquireComAlternatives />} />
+                      <Route path="/blog/HowToBuyBusinessBeginnersGuide" element={<HowToBuyBusinessBeginnersGuide />} />
+                      <Route path="/blog/HowToSellYourBusinessOnline2025" element={<HowToSellYourBusinessOnline2025 />} />
+                      <Route path="/blog/StartupBazzarBlogGuide" element={<StartupBazzarBlogGuide />} />
+                      <Route path="/blog/TopStartupMarketplaceQueries" element={<TopStartupMarketplaceQueries />} />
+                      <Route path="/blog/AIInBusiness2025" element={<AIInBusiness2025 />} />
+                      <Route path="/blog/ProfitableBusinessIdeas2025" element={<ProfitableBusinessIdeas2025 />} />
+                      <Route path="/blog/SmallBusinessIdeas2025" element={<SmallBusinessIdeas2025 />} />
+                      <Route path="/blog/LittleBusinessIdeas2025" element={<LittleBusinessIdeas2025 />} />
+                    </Route>
+
                     <Route element={<Layout />}>
                       <Route path="/" element={<Home />} />
                       <Route path="/explore" element={<ProtectedRoute><Explore /></ProtectedRoute>} />

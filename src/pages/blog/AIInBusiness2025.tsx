@@ -1,5 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
+import InlineAd from '@/components/ads/InlineAd';
 
 const AIInBusiness2025 = () => {
   return (
@@ -197,8 +198,7 @@ const AIInBusiness2025 = () => {
         </section>
       </div>
 
-      <script async data-cfasync="false" src="//pl27387750.profitableratecpm.com/ccb6e5efad6fd82048f4a2fc01cf289f/invoke.js"></script>
-      <div id="container-ccb6e5efad6fd82048f4a2fc01cf289f"></div>
+      <InlineAd />
     </>
   );
 };

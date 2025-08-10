@@ -1,6 +1,8 @@
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { blogPosts, categories, getFeaturedPosts } from '@/config/blogPosts';
+import InlineAd from '@/components/ads/InlineAd';
+import Banner468x60 from '@/components/ads/Banner468x60';
 
 export default function BlogIndex() {
   return (
@@ -147,6 +149,11 @@ export default function BlogIndex() {
                 </span>
               </div>
             </div>
+          </div>
+
+          <div className="my-8 flex flex-col items-center gap-4">
+            <InlineAd />
+            <Banner468x60 />
           </div>
 
           {/* Featured Posts */}
