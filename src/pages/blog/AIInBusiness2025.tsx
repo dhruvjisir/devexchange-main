@@ -196,6 +196,9 @@ const AIInBusiness2025 = () => {
           </div>
         </section>
       </div>
+
+      <script async data-cfasync="false" src="//pl27387750.profitableratecpm.com/ccb6e5efad6fd82048f4a2fc01cf289f/invoke.js"></script>
+      <div id="container-ccb6e5efad6fd82048f4a2fc01cf289f"></div>
     </>
   );
 };
