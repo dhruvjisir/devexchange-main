@@ -54,6 +54,7 @@ import AIInBusiness2025 from '@/pages/blog/AIInBusiness2025';
 import ProfitableBusinessIdeas2025 from '@/pages/blog/ProfitableBusinessIdeas2025';
 import SmallBusinessIdeas2025 from '@/pages/blog/SmallBusinessIdeas2025';
 import LittleBusinessIdeas2025 from '@/pages/blog/LittleBusinessIdeas2025';
+import HowToSellBootstrappedSaaS7Days from '@/pages/blog/how-to-sell-bootstrapped-saas-7-days';
 
 // Memoized Background Elements
 const BackgroundElements = memo(() => (
@@ -150,6 +151,7 @@ function App() {
 
                     <Route element={<BlogLayout />}>
                       <Route path="/blog" element={<BlogIndex />} />
+                      <Route path="/blog/how-to-sell-bootstrapped-saas-7-days" element={<HowToSellBootstrappedSaaS7Days />} />
                       <Route path="/blog/HowToAcquireStartup2025" element={<HowToAcquireStartup2025 />} />
                       <Route path="/blog/Top10PlatformsToBuySellStartups" element={<Top10PlatformsToBuySellStartups />} />
                       <Route path="/blog/WhyStartupBazzarBest" element={<WhyStartupBazzarBest />} />

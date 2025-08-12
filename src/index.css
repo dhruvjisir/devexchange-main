@@ -15,7 +15,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
+    --primary: 221.2 83.2% 53.3%;
     --primary-foreground: 210 40% 98%;
 
     --secondary: 210 40% 96.1%;
@@ -32,7 +32,7 @@
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --ring: 221.2 83.2% 53.3%;
 
     --radius: 0.5rem;
 
@@ -50,7 +50,7 @@
     --color-3: 214.3 31.8% 91.4%;
     --color-4: 210 40% 96.1%;
     --color-5: 0 0% 100%;
-    --gradient-bg: linear-gradient(to bottom, #ffffff 0%, #f8fafc 50%, #f1f5f9 100%, #ffffff 100%);
+    --gradient-bg: linear-gradient(to bottom, #ffffff 0%, #f8fafc 50%, #f1f5f9 100%);
   }
 
   body {
@@ -102,7 +102,7 @@
     --color-3: 217.2 32.6% 17.5%;
     --color-4: 222.2 84% 4.9%;
     --color-5: 0 0% 0%;
-    --gradient-bg: linear-gradient(to bottom, #0f172a 0%, #1e293b 50%, #0f172a 100%, #0f172a 100%);
+    --gradient-bg: linear-gradient(to bottom, #0f172a 0%, #1e293b 50%, #0f172a 100%);
   }
 }
 
@@ -271,6 +271,51 @@
   margin: 0 auto;
   padding: 0;
   text-align: left;
+}
+
+/* Ad Component Styles */
+.inline-ad-slot {
+  min-height: 100px;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.ad-banner-468x60 {
+  min-height: 60px;
+  width: 100%;
+  max-width: 468px;
+  overflow: hidden;
+}
+
+.ad-skyscraper-160x600 {
+  min-height: 600px;
+  width: 160px;
+  overflow: hidden;
+}
+
+/* Ensure ads don't break layout */
+iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive ad adjustments */
+@media (max-width: 1280px) {
+  .ad-skyscraper-160x600 {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .ad-banner-468x60 {
+    max-width: 100%;
+    min-height: 50px;
+  }
+  
+  .inline-ad-slot {
+    min-height: 80px;
+  }
 }
 
 /* Animation Delays */

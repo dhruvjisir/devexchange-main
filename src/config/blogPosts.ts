@@ -11,163 +11,84 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
-    title: 'Top Startup Marketplace Queries: Startup Bazzar, Buy Startup Websites & More',
-    path: '/blog/TopStartupMarketplaceQueries',
-    description: 'Discover the most searched startup marketplace queries in 2025. From "startup bazzar" to "buy startup websites" and "microacquire alternative" - we analyze what entrepreneurs are really searching for.',
-    date: 'January 21, 2025',
-    readTime: '8 min read',
-    category: 'Market Research',
+    title: "How to Sell a Bootstrapped SaaS in 7 Days With No Earn-Out (Using StartupBazaar)",
+    path: "/blog/how-to-sell-bootstrapped-saas-7-days",
+    description: "Learn how to sell your bootstrapped SaaS in just 7 days with full payment upfront and no earn-out agreements using StartupBazaar's streamlined marketplace.",
+    date: "2025-12-08",
+    readTime: "8 min read",
+    category: "Business Exit",
     featured: true,
-    tags: ['startup bazzar', 'startup websites for sale', 'buy startup websites', 'microacquire alternative', 'buy startup', 'market research']
+    tags: ["SaaS", "Business Exit", "Startup Sale", "No Earn-Out", "Quick Exit", "StartupBazaar"]
   },
   {
-    title: 'StartupBazzar Blog: Your Complete Guide to Startup Marketplace Insights',
-    path: '/blog/StartupBazzarBlogGuide',
-    description: 'Welcome to the StartupBazzar blog – your ultimate resource for everything related to buying, selling, and acquiring startups. Discover expert insights and practical guides.',
-    date: 'January 20, 2025',
-    readTime: '5 min read',
-    category: 'Blog Guide',
+    title: "Top Startup Marketplace Queries: What Buyers Are Actually Searching For",
+    path: "/blog/top-startup-marketplace-queries",
+    description: "Discover the most searched startup marketplace queries and learn how to optimize your listing for maximum visibility and buyer engagement.",
+    date: "2025-12-07",
+    readTime: "6 min read",
+    category: "Market Research",
     featured: true,
-    tags: ['blog', 'guide', 'startup marketplace']
+    tags: ["Startup Marketplace", "SEO", "Buyer Behavior", "Market Research", "Listing Optimization"]
   },
   {
-    title: 'AI in Business 2025: How Small Businesses Can Harness AI & AGI',
-    path: '/blog/AIInBusiness2025',
-    description: 'Discover how AI and AGI are transforming small businesses in 2025. Learn practical strategies, real startup ideas, and how to leverage artificial intelligence for business growth.',
-    date: 'January 15, 2025',
-    readTime: '8 min read',
-    category: 'Technology',
+    title: "StartupBazzar Blog Guide: Your Complete Resource for Startup Success",
+    path: "/blog/startupbazzar-blog-guide",
+    description: "Explore StartupBazzar's comprehensive blog covering expert guides, business ideas, platform comparisons, and industry insights for entrepreneurs.",
+    date: "2025-12-06",
+    readTime: "5 min read",
+    category: "Platform Guide",
+    featured: false,
+    tags: ["StartupBazzar", "Blog Guide", "Entrepreneurship", "Resources", "Platform Features"]
+  },
+  {
+    title: "How to Buy a Business: A Beginner's Guide to Business Acquisition",
+    path: "/blog/how-to-buy-business-beginners-guide",
+    description: "Complete beginner's guide to buying a business, from finding opportunities to closing the deal successfully.",
+    date: "2025-12-05",
+    readTime: "12 min read",
+    category: "Business Acquisition",
     featured: true,
-    tags: ['AI', 'business', 'technology', '2025']
+    tags: ["Business Buying", "Acquisition", "Due Diligence", "Beginner Guide", "Business Purchase"]
   },
   {
-    title: '21 Profitable Business Ideas to Start in 2025 (Low Investment, High Returns)',
-    path: '/blog/ProfitableBusinessIdeas2025',
-    description: 'Looking for profitable business ideas in 2025? Discover 21 trending startup ideas across AI, e-commerce, services, and more. Start a business with low investment and big potential.',
-    date: 'January 16, 2025',
-    readTime: '10 min read',
-    category: 'Business Ideas',
+    title: "How to Sell Your Business Online in 2025: Complete Guide",
+    path: "/blog/how-to-sell-your-business-online-2025",
+    description: "Master the art of selling your business online in 2025 with proven strategies and modern digital tools.",
+    date: "2025-12-04",
+    readTime: "10 min read",
+    category: "Business Exit",
     featured: true,
-    tags: ['business ideas', 'startup', '2025', 'profitable']
+    tags: ["Business Sale", "Online Selling", "Digital Marketing", "Exit Strategy", "2025 Trends"]
   },
   {
-    title: '17 Small Business Ideas You Can Start Today (Work From Home Friendly)',
-    path: '/blog/SmallBusinessIdeas2025',
-    description: 'Start your entrepreneurial journey with these 17 small business ideas. Work from home, scale fast, and earn a steady income—even if you\'re just starting out.',
-    date: 'January 17, 2025',
-    readTime: '8 min read',
-    category: 'Business Ideas',
+    title: "AI in Business 2025: How Artificial Intelligence is Transforming Entrepreneurship",
+    path: "/blog/ai-in-business-2025",
+    description: "Explore how AI is revolutionizing business operations, decision-making, and growth strategies in 2025.",
+    date: "2025-12-03",
+    readTime: "9 min read",
+    category: "Technology",
+    featured: false,
+    tags: ["Artificial Intelligence", "Business Technology", "AI Trends", "Digital Transformation", "2025"]
+  },
+  {
+    title: "The Ultimate Guide to Startup Funding: From Bootstrap to Series A",
+    path: "/blog/startup-funding-guide-bootstrap-to-series-a",
+    description: "Navigate the complex world of startup funding with this comprehensive guide covering all stages from bootstrap to Series A.",
+    date: "2025-12-02",
+    readTime: "15 min read",
+    category: "Funding",
     featured: true,
-    tags: ['small business', 'work from home', 'entrepreneurship']
+    tags: ["Startup Funding", "Venture Capital", "Bootstrap", "Series A", "Investment"]
   },
   {
-    title: '15 Little Business Ideas You Can Start With ₹5,000 (No Office Needed)',
-    path: '/blog/LittleBusinessIdeas2025',
-    description: 'Discover 15 little business ideas with low investment. Perfect for students, homemakers, and beginners. Start earning from home with zero experience.',
-    date: 'January 18, 2025',
-    readTime: '6 min read',
-    category: 'Business Ideas',
-    featured: true,
-    tags: ['low investment', 'beginners', 'home business']
-  },
-  {
-    title: 'How to Buy a Business: A Beginner\'s Guide',
-    path: '/blog/HowToBuyBusinessBeginnersGuide',
-    description: 'Learn how to buy a business with our comprehensive beginner\'s guide. Discover the essential steps, from finding the right biz buy opportunity to closing the deal successfully.',
-    date: 'January 12, 2025',
-    readTime: '7 min read',
-    category: 'Buying Guide',
-    tags: ['buy business', 'beginners', 'acquisition']
-  },
-  {
-    title: 'How to Sell Your Business Online in 2025',
-    path: '/blog/HowToSellYourBusinessOnline2025',
-    description: 'Learn how to sell your business online in 2025 with this step-by-step guide. Discover the best strategies, platforms, and tips for a successful biz sell experience.',
-    date: 'January 11, 2025',
-    readTime: '5 min read',
-    category: 'Selling Guide',
-    tags: ['sell business', 'online', '2025']
-  },
-  {
-    title: 'How to Acquire a Startup in 2025: A Step-by-Step Guide',
-    path: '/blog/HowToAcquireStartup2025',
-    description: 'Learn the step-by-step process to acquire a startup in 2025. From sourcing deals to due diligence and closing, this guide covers everything you need to know.',
-    date: 'January 10, 2025',
-    readTime: '12 min read',
-    category: 'Acquisition Guide',
-    tags: ['acquire startup', 'due diligence', 'M&A']
-  },
-  {
-    title: 'Top 10 Platforms to Buy and Sell Startups (Why StartupBazzar Leads)',
-    path: '/blog/Top10PlatformsToBuySellStartups',
-    description: 'Discover the top 10 platforms to buy and sell startups in 2025. See why StartupBazzar is the best choice for founders and buyers.',
-    date: 'January 8, 2025',
-    readTime: '10 min read',
-    category: 'Platform Comparison',
-    tags: ['platforms', 'comparison', 'marketplace']
-  },
-  {
-    title: 'Why StartupBazzar is the Best Place to Buy or Sell Your Business',
-    path: '/blog/WhyStartupBazzarBest',
-    description: 'Discover why StartupBazzar is the top marketplace for buying and selling startups, SaaS, and online businesses. Learn about our unique features and benefits.',
-    date: 'January 5, 2025',
-    readTime: '7 min read',
-    category: 'Platform Features',
-    tags: ['StartupBazzar', 'features', 'benefits']
-  },
-  {
-    title: 'How to Sell Your Startup Online (Step-by-Step Guide for 2025)',
-    path: '/blog/HowToSellYourStartup2025',
-    description: 'A 2025 step-by-step guide to selling your startup online. Compare Acquire.com, StartupBazzar, and more. Includes tips, FAQs, and platform comparison.',
-    date: 'January 3, 2025',
-    readTime: '11 min read',
-    category: 'Selling Guide',
-    tags: ['sell startup', 'online', 'guide', '2025']
-  },
-  {
-    title: 'How to Sell Business on Acquire.com: Complete Guide',
-    path: '/blog/HowToSellBusinessOnAcquire',
-    description: 'Learn how to sell your business on Acquire.com with our comprehensive guide. Discover best practices, tips, and strategies for maximizing your business value.',
-    date: 'January 2, 2025',
-    readTime: '9 min read',
-    category: 'Platform Guide',
-    tags: ['Acquire.com', 'sell business', 'platform guide']
-  },
-  {
-    title: 'How to Sell Your Startup: Essential Tips and Strategies',
-    path: '/blog/HowToSellYourStartup',
-    description: 'Master the art of selling your startup with proven strategies and tips. Learn how to prepare, market, and close the deal for maximum value.',
-    date: 'December 30, 2024',
-    readTime: '6 min read',
-    category: 'Selling Guide',
-    tags: ['sell startup', 'strategies', 'tips']
-  },
-  {
-    title: 'Sites Like Acquire.com: Top Alternatives for Business Sales',
-    path: '/blog/SitesLikeAcquire',
-    description: 'Explore the best alternatives to Acquire.com for selling your business. Compare features, fees, and success rates across different platforms.',
-    date: 'December 28, 2024',
-    readTime: '5 min read',
-    category: 'Platform Comparison',
-    tags: ['alternatives', 'Acquire.com', 'platforms']
-  },
-  {
-    title: 'Sell Business Online: Complete Guide to Digital Business Sales',
-    path: '/blog/SellBusinessOnline',
-    description: 'Everything you need to know about selling your business online. From preparation to closing, this guide covers the entire digital sales process.',
-    date: 'December 25, 2024',
-    readTime: '8 min read',
-    category: 'Selling Guide',
-    tags: ['sell business', 'online', 'digital sales']
-  },
-  {
-    title: 'Acquire.com Alternatives: Best Platforms to Sell Your Business',
-    path: '/blog/AcquireComAlternatives',
-    description: 'Discover the best alternatives to Acquire.com for selling your business. Compare features, pricing, and success rates to find the perfect platform.',
-    date: 'December 20, 2024',
-    readTime: '6 min read',
-    category: 'Platform Comparison',
-    tags: ['alternatives', 'Acquire.com', 'platforms']
+    title: "10 Profitable Business Ideas for 2025: Low-Cost, High-Potential Ventures",
+    path: "/blog/profitable-business-ideas-2025",
+    description: "Discover 10 low-cost, high-potential business ideas that are trending in 2025 and can be started with minimal capital.",
+    date: "2025-12-01",
+    readTime: "11 min read",
+    category: "Business Ideas",
+    featured: false,
+    tags: ["Business Ideas", "Entrepreneurship", "Low-Cost Business", "2025 Trends", "Profitability"]
   }
 ];
 

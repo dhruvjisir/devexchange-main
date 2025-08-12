@@ -5,7 +5,7 @@ export default function SkyscraperRail() {
     <>
       {/* Left rail */}
       <div
-        className="hidden xl:block fixed top-24 left-2 z-30"
+        className="hidden xl:block fixed top-24 left-4 z-20"
         style={{ width: 160, height: 600 }}
       >
         <Skyscraper160x600 />
@@ -13,7 +13,7 @@ export default function SkyscraperRail() {
 
       {/* Right rail */}
       <div
-        className="hidden xl:block fixed top-24 right-2 z-30"
+        className="hidden xl:block fixed top-24 right-4 z-20"
         style={{ width: 160, height: 600 }}
       >
         <Skyscraper160x600 />
