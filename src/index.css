@@ -273,12 +273,45 @@
   text-align: left;
 }
 
+/* Container and Layout Improvements */
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* Main Content Alignment */
+main {
+  min-height: calc(100vh - 200px);
+  display: flex;
+  flex-direction: column;
+}
+
 /* Ad Component Styles */
 .inline-ad-slot {
   min-height: 100px;
   width: 100%;
   max-width: 100%;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .ad-banner-468x60 {
@@ -286,18 +319,25 @@
   width: 100%;
   max-width: 468px;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .ad-skyscraper-160x600 {
   min-height: 600px;
   width: 160px;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Ensure ads don't break layout */
 iframe {
   max-width: 100%;
   height: auto;
+  border: none;
 }
 
 /* Responsive ad adjustments */
@@ -316,6 +356,43 @@ iframe {
   .inline-ad-slot {
     min-height: 80px;
   }
+}
+
+/* Blog Post Improvements */
+.prose {
+  max-width: none;
+  color: inherit;
+}
+
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4,
+.prose h5,
+.prose h6 {
+  color: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  margin-top: inherit;
+  margin-bottom: inherit;
+}
+
+.prose p {
+  color: inherit;
+  margin-top: inherit;
+  margin-bottom: inherit;
+}
+
+.prose ul {
+  color: inherit;
+  margin-top: inherit;
+  margin-bottom: inherit;
+}
+
+.prose li {
+  color: inherit;
+  margin-top: inherit;
+  margin-bottom: inherit;
 }
 
 /* Animation Delays */

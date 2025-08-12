@@ -5,16 +5,32 @@ import SkyscraperRail from "@/components/SkyscraperRail";
 
 export default function BlogLayout() {
   return (
-    <div className="w-full">
+    <div className="min-h-screen flex flex-col">
       <SkyscraperRail />
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl my-6 flex flex-col items-center gap-4">
-        <InlineAd />
-        <Banner468x60 />
+      
+      {/* Top ads */}
+      <div className="w-full bg-gray-50">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl py-6">
+          <div className="flex flex-col items-center gap-6">
+            <InlineAd />
+            <Banner468x60 />
+          </div>
+        </div>
       </div>
-      <Outlet />
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl my-6 flex flex-col items-center gap-4">
-        <InlineAd />
-        <Banner468x60 />
+      
+      {/* Main blog content */}
+      <div className="flex-1">
+        <Outlet />
+      </div>
+      
+      {/* Bottom ads */}
+      <div className="w-full bg-gray-50">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl py-6">
+          <div className="flex flex-col items-center gap-6">
+            <InlineAd />
+            <Banner468x60 />
+          </div>
+        </div>
       </div>
     </div>
   );

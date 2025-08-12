@@ -7,31 +7,31 @@ import SkyscraperRail from "@/components/SkyscraperRail";
 
 const Layout = () => {
   return (
-    <>
+    <div className="min-h-screen flex flex-col">
       <SkyscraperRail />
       <NavBar />
-      <main className="flex-grow w-full py-6 sm:py-8">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative">
+      <main className="flex-1 w-full">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           {/* Top ad section */}
-          <div className="mb-8 flex flex-col items-center gap-6">
+          <div className="py-6 flex flex-col items-center gap-6">
             <InlineAd />
             <Banner468x60 />
           </div>
           
           {/* Main content */}
-          <div className="relative z-10">
+          <div className="py-6">
             <Outlet />
           </div>
           
           {/* Bottom ad section */}
-          <div className="mt-8 flex flex-col items-center gap-6">
+          <div className="py-6 flex flex-col items-center gap-6">
             <Banner468x60 />
             <InlineAd />
           </div>
         </div>
       </main>
       <Footer />
-    </>
+    </div>
   );
 };
 
